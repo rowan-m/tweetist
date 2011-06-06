@@ -1,0 +1,16 @@
+SET storage_engine=INNODB;
+SET charset utf8;
+SET foreign_key_checks = 0;
+
+DROP TABLE IF EXISTS `features`;
+
+CREATE TABLE `features` (
+	`feature_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	`user_id` INT UNSIGNED NOT NULL,
+	`tweet_id` INT UNSIGNED NOT NULL,
+	`func` VARCHAR(63) NOT NULL,
+	`args` VARCHAR(255) NOT NULL,
+	`loved` BOOL NOT NULL,
+	PRIMARY KEY (`feature_id`),
+	UNIQUE `UQ_features_1` (`user_id`, `tweet_id`, `func`, `args`, `loved`)
+);

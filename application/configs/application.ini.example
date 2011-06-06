@@ -1,0 +1,38 @@
+[production]
+phpSettings.display_startup_errors = 0
+phpSettings.display_errors = 0
+includePaths.library = APPLICATION_PATH "/../library"
+bootstrap.path = APPLICATION_PATH "/Bootstrap.php"
+bootstrap.class = "Bootstrap"
+appnamespace = "Tweetist"
+resources.frontController.controllerDirectory = APPLICATION_PATH "/controllers"
+resources.frontController.params.displayExceptions = 0
+resources.layout.layoutPath = APPLICATION_PATH "/layouts/scripts/"
+resources.layout.title = "Tweetist"
+resources.view[] = ""
+resources.db.adapter = "PDO_SQLITE"
+resources.db.params.dbname = APPLICATION_PATH "/../data/db/tweetist.db"
+
+; resources.db.adapter = "Pdo_Mysql"
+; resources.db.params.host = "localhost"
+; resources.db.params.dbname = "tweetist"
+; resources.db.params.username = "app"
+; resources.db.params.password = "password"
+
+oauth.callbackUrl = "http://tweetist.org/auth/callback"
+oauth.siteUrl = "http://twitter.com/oauth"
+oauth.consumerKey = "LOL"
+oauth.consumerSecret = "DOUBLE-LOL"
+
+[staging : production]
+resources.db.adapter = "PDO_SQLITE"
+resources.db.params.dbname = APPLICATION_PATH "/../data/db/tweetist-staging.db"
+
+[testing : production]
+
+[development : production]
+oauth.callbackUrl = "http://tweetist.alpha/auth/callback"
+resources.db.adapter = "PDO_SQLITE"
+resources.db.params.dbname = APPLICATION_PATH "/../data/db/tweetist-development.db"
+phpSettings.display_startup_errors = 1
+phpSettings.display_errors = 1
