@@ -1,0 +1,7 @@
+*.swp
+.buildpath
+.project
+.settings
+application/configs/application.ini
+data/db/*.db
+library/Zend
