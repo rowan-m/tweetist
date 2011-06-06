@@ -1,0 +1,4 @@
+Tweetist
+========
+
+A proof-of-concept application applying Bayesian classification to a Twitter stream. It's a Zend Framework application with an SQLite database. It's pretty hacky currently, but if I didn't publish it now then I was probably never going to.

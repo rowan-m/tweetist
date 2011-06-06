@@ -1,0 +1,14 @@
+<div class="tweet">
+	<img class="tweet-profile" width="48" height="48" src="<?php echo $this->tweet->user->profile_image_url; ?>" />
+	<div class="tweet-body">
+		<span class="tweet-screenname"><?php echo $this->tweet->user->screen_name; ?></span>
+		<span class="tweet-text"><?php echo $this->tweet->text; ?></span>
+	</div>
+	<div class="tweet-bayes">
+		<div class="bayes-action">
+			<span class="bayes-love"><a href="/tweet/<?php echo $this->tweet->id; ?>/love">Love <img src="/img/heart.png" alt="Love" /></a></span>
+			<span class="bayes-hate"><a href="/tweet/<?php echo $this->tweet->id; ?>/hate">Hate<img src="/img/skull.png" alt="Hate" /></a></span>
+		</div>
+		<span class="bayes-score"><img src="/img/rate<?php echo ceil($this->score * 5); ?>.png" alt="<?php echo round($this->score * 5, 1); ?>" /></span>
+	</div>
+</div>

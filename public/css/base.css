@@ -1,0 +1,163 @@
+a {
+	color: #486348;
+}
+
+a:hover, a:active {
+	color: #1D571D;
+}
+
+a:visited {
+	color: #7C6A5B;
+}
+
+#title {
+	background: #3f6262;
+	border-bottom: 4px solid #154141;
+	padding: 5px 20px 5px 20px;
+}
+
+#footer {
+	clear: both;
+	background: #3f6262;
+	margin-top: 30px;
+	border-top: 4px solid #154141;
+	border-bottom: 4px solid #154141;
+	padding: 5px 20px 5px 20px;
+}
+
+#footer div {
+	padding: 5px;
+	margin: 10px;
+	color: #364A4A;
+	background: #5E8484;
+	width: 60%;
+}
+
+#footer a {
+	color: #364A4A;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+h1 a {
+	color: black;
+	text-decoration: none;
+}
+
+h2 {
+	color: #3F6262;
+	margin-top: 10px;
+}
+
+.heading-icon {
+	float: left;
+	padding-right: 10px;
+}
+
+p {
+	margin-top: 5px;
+}
+
+#title-tweet-skull {
+	width: 210px;
+	height: 37px;
+	background: url("/img/tweetist_skull.png");
+	text-indent: -9999px;
+}
+
+#title-tweet-heart {
+	width: 210px;
+	height: 37px;
+	background: url("/img/tweetist_heart.png");
+	text-indent: -9999px;
+}
+
+#title-blurb {
+	padding: 0px 5px 5px 5px;
+	color: #364A4A;
+	background: #5E8484;
+	font-weight: bold;
+	font-size: 80%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+#title-blurb a {
+	color: #364A4A;
+}
+
+#content {
+	padding-top: 15px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tweet {
+	width: 100%;
+	padding: 5px;
+	float: left;
+	border-bottom: 4px solid #154141;
+	clear: both;
+}
+
+.tweet-profile {
+	float: left;
+	margin-right: 10px;
+}
+
+.tweet-body {
+	float: left;
+	width: 80%;
+}
+
+.tweet-screenname {
+	display: block;
+	font-weight: bold;
+}
+
+.tweet-text {
+	display: block;
+}
+
+.tweet-bayes {
+	float: right;
+}
+
+.bayes-action {
+	float: left;
+}
+
+.tweet-bayes a {
+	color: #364A4A;
+	font-size: 80%;
+}
+
+.tweet-bayes img {
+	padding: 2px;
+}
+
+.bayes-love {
+	float: right;
+	display: block;
+	clear: both;
+}
+
+.bayes-hate {
+	float: right;
+	display: block;
+	clear: both;
+}
+
+.bayes-reset {
+	clear: both;
+}
+
+.bayes-score {
+	float: right;
+	padding-left: 3px;
+}
+

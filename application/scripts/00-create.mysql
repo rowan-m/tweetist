@@ -1,0 +1,7 @@
+DROP DATABASE IF EXISTS `tweetist`;
+
+CREATE DATABASE `tweetist` DEFAULT CHARACTER SET `utf8`;
+
+GRANT ALL PRIVILEGES ON `tweetist`.* TO 'deploy'@'localhost' IDENTIFIED BY 'password';
+
+GRANT DELETE, INSERT, SELECT, UPDATE ON `tweetist`.* TO 'app'@'localhost' IDENTIFIED BY 'password';
