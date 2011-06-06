@@ -26,11 +26,6 @@
       </controllersDirectory>
       <formsDirectory enabled="false"/>
       <layoutsDirectory enabled="false"/>
-      <modelsDirectory>
-        <dbTableDirectory>
-          <dbTableFile dbTableName="Features"/>
-        </dbTableDirectory>
-      </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <viewsDirectory>
         <viewScriptsDirectory>
